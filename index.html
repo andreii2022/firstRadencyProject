@@ -7,6 +7,59 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Notes App</h1>
+    <div>
+        <label for="noteContent">Note Content:</label>
+        <input type="text" id="noteContent">
+        <label for="noteCategory">Category:</label>
+        <select id="noteCategory">
+            <option value="Task">Task</option>
+            <option value="Random Thought">Random Thought</option>
+            <option value="Idea">Idea</option>
+        </select>
+        <button onclick="addNote()">Add Note</button>
+    </div>
+    <hr>
+    <h2>Active Notes</h2>
+    <table id="activeNotesTable">
+        <thead>
+            <tr>
+                <th>Time of Creation</th>
+                <th>Note Content</th>
+                <th>Note Category</th>
+                <th>Dates Mentioned</th>
+            </tr>
+        </thead>
+        <tbody id="activeNotesBody">
+        </tbody>
+    </table>
+    <hr>
+    <h2>Archived Notes</h2>
+    <table id="archivedNotesTable">
+        <thead>
+            <tr>
+                <th>Time of Creation</th>
+                <th>Note Content</th>
+                <th>Note Category</th>
+                <th>Dates Mentioned</th>
+            </tr>
+        </thead>
+        <tbody id="archivedNotesBody">
+        </tbody>
+    </table>
+    <hr>
+    <h2>Summary Table</h2>
+    <table id="summaryTable">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Active Notes</th>
+                <th>Archived Notes</th>
+            </tr>
+        </thead>
+        <tbody id="summaryTableBody">
+        </tbody>
+    </table>
 
 
     <script src="js/main.js"></script>
