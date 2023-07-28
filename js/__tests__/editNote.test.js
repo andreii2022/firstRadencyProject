@@ -1,4 +1,4 @@
-// __tests__/editNote.test.js
+
 
 import { replaceNoteWithEditForm } from '../function/editNote';
 

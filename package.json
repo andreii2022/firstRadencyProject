@@ -8,5 +8,20 @@
   },
   "scripts": {
     "test": "jest"
-  }
+  },
+  "name": "projectradency",
+  "description": "Task 1 radency intership",
+  "version": "1.0.0",
+  "main": "jest.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreii2022/firstRadencyProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreii2022/firstRadencyProject/issues"
+  },
+  "homepage": "https://github.com/andreii2022/firstRadencyProject#readme"
 }

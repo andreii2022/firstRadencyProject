@@ -1,6 +1,4 @@
-
 export function makeNoteItem(note) {
-  // Создаем строку с данными о заметке
   return `<tr class="note-item ${note.id}">
     <td class="note-info">
       <div style="display: flex; align-items: center; justify-content: space-around;">
@@ -28,7 +26,6 @@ export function makeNoteItem(note) {
 }
 
 export function makeAddedItem(note) {
-  // Создаем строку с формой для добавления или редактирования заметки
   return `<tr class="note-item" id ='addedItem'>
     <td class='add-note' colspan="6">
         <form id='add-form'>
