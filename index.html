@@ -1,14 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css" />
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
+  <body>
+    <div class="container">
+      <i class="fas fa-head-side-virus"></i>
+      <div class="notes-container">
+        <table class="main-table">
+          <thead>
+            <tr class="header-list">
+              <td class="note-info">Name</td>
+              <td class="note-date-created">Created</td>
+              <td class="note-category">Category</td>
+              <td class="note-text">Content</td>
+              <td class="note-dates-aditional">Dates</td>
+              <td>
+                <div class="note-header-icons">
+                  <i class="fas fa-archive"></i>
+                  <i class="fas fa-trash"></i>
+                </div>
+              </td>
+            </tr>
+          </thead>
+          <tbody class="main-table-body"></tbody>
+        </table>
+        <div class="note-create">
+          <button class="button-create">Create Note</button>
+        </div>
+        <header class="header-list">
+          <span class="note-archived-category">Category</span>
+          <span class="note-active">Active</span>
+          <span class="note-archived">Archived</span>
+        </header>
+        <table>
+          <thead class="head note-item btn" id="Task">
+            <td colspan="2">
+              <i class="fas fa-shopping-cart"></i>
+              Task
+            </td>
+            <td colspan="2">
+              <span class="active-task">-</span>
+            </td>
+            <td colspan="1">
+              <span class="archived-task">-</span>
+            </td>
+            <td colspan="1">
+              <i class="icon"></i>
+            </td>
+          </thead>
+          <tbody class="body archived-items" id="Task"></tbody>
+        </table>
+        <table>
+          <thead class="head note-item btn" id="Random Thought">
+            <td colspan="2">
+              <i class="fas fa-bookmark"></i>
+              Random Thought
+            </td>
+            <td colspan="2">
+              <span class="active-thought">-</span>
+            </td>
+            <td colspan="1">
+              <span class="archived-thought">-</span>
+            </td>
+            <td colspan="1">
+              <i class="icon"></i>
+            </td>
+          </thead>
+          <tbody class="body archived-items" id="Random Thought"></tbody>
+        </table>
+        <table>
+          <thead class="head note-item btn" id="Idea">
+            <td colspan="2">
+              <i class="far fa-lightbulb"></i>
+              Idea
+            </td>
+            <td colspan="2">
+              <span class="active-idea">-</span>
+            </td>
+            <td colspan="1">
+              <span class="archived-idea">-</span>
+            </td>
+            <td colspan="1">
+              <i class="icon"></i>
+            </td>
+          </thead>
+          <tbody class="body archived-items" id="Idea"></tbody>
+        </table>
+      </div>
+    </div>
 
-    <script src="js/main.js"></script>
-</body>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
