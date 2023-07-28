@@ -6,3 +6,45 @@ const deleteAllNotesBtn = mainTableHead.querySelector('.fas.fa-trash');
 const archiveAllNotesBtn = mainTableHead.querySelector('.fas.fa-archive');
 const createNoteBtn = document.querySelector('.button-create');
 const sumTableBtns = document.querySelectorAll('.head.note-item.btn');
+
+
+renderMainTable();
+renderSummary();
+
+createNoteBtn.addEventListener('click', () => createNote(mainTableBody));
+
+archiveAllNotesBtn.addEventListener('click', () => {
+  if (confirm('Are you sure you want to archive all notes?')) {
+    const sumTableBody = document.querySelectorAll('tbody.archived-items');
+    archiveAllNotes();
+
+    Array.from(sumTableBody).map(
+      (body) => body.classList.contains('open') && renderArchivedTable(body, getNotes(), body.id),
+    );
+
+    renderMainTable();
+    renderSummary();
+  }
+});
+
+deleteAllNotesBtn.addEventListener('click', () => {
+  if (confirm('Are you sure you want to delete all notes?')) {
+    const sumTableBody = document.querySelectorAll('tbody.archived-items');
+    deleteAllNotes();
+
+    Array.from(sumTableBody).map(
+      (body) => body.classList.contains('open') && renderArchivedTable(body, getNotes(), body.id),
+    );
+
+    renderMainTable();
+    renderSummary();
+  }
+});
+
+
+
+Array.from(sumTableBtns).map((btn) =>
+  btn.addEventListener('click', (e) =>
+    updeteArchivedTables(e.target.parentElement.parentElement.id),
+  ),
+);
