@@ -184,36 +184,62 @@ td:hover {
   transform: scale(1.02);
 }
 
-
-@media screen and (max-width: 768px) {
+@media (max-width: 575.98px) {
   .container {
-    margin: 20px;
+    margin: 20px auto;
     padding: 10px;
   }
-  .header-list {
-    padding: 10px;
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
   }
-  .note-item {
-    font-size: 1rem;
-  }
-  .note-item i {
-    font-size: 1.2rem;
-  }
+
   .note-create {
     font-size: 1rem;
+    padding: 8px 16px;
   }
+
   input,
   select {
-    padding: 10px 15px;
-    font-size: 1rem;
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
-  input[type='date'] {
-    padding: 8px 15px;
-  }
-  input[type='submit'] {
-    padding: 8px 15px;
-    font-size: 1rem;
+
+  th,
+  td {
+    padding: 12px;
   }
 }
+
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .container {
+    margin: 30px auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .note-create {
+    font-size: 1.1rem;
+    padding: 10px 18px;
+  }
+
+  input,
+  select {
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+
+  th,
+  td {
+    padding: 16px;
+  }
+}
+
 
 
