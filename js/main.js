@@ -1,3 +1,8 @@
+import createNote from './function/createNote.js';
+import renderMainTable from './renderAll/renderMainTable.js';
+import renderSummary from './renderAll/renderSummary.js';
+import { archiveAllNotes, deleteAllNotes, getNotes } from './data/notes.js';
+import { renderArchivedTable, updeteArchivedTables } from './function/updeteArchivedTables.js';
 
 
 const mainTableBody = document.querySelector('tbody.main-table-body');

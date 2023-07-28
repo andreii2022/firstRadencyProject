@@ -1,4 +1,9 @@
 
+import { makeNoteItem, makeAddedItem } from '../data/makeNodeItem.js';
+import { addNotesBtn } from '../renderAll/renderMainTable.js';
+import renderSummary from '../renderAll/renderSummary.js';
+import { getNotes, addNewNote, makeNewNoteObj } from '../data/notes.js';
+
 
 export default function addNote(tableBody) {
   let notes = getNotes();
