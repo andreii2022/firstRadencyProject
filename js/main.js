@@ -49,7 +49,8 @@ deleteAllNotesBtn.addEventListener('click', () => {
 
 
 Array.from(sumTableBtns).map((btn) =>
-  btn.addEventListener('click', (e) =>
-    updeteArchivedTables(e.target.parentElement.parentElement.id),
-  ),
+  btn.addEventListener('click', (e) => {
+		// updeteArchivedTables(e.target.parentElement.parentElement.id)
+		updeteArchivedTables(btn.id)
+	}),
 );

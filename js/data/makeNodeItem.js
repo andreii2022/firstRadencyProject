@@ -1,7 +1,7 @@
 export function makeNoteItem(note) {
   return `<tr class="note-item ${note.id}">
     <td class="note-info">
-      <div style="display: flex; align-items: center; justify-content: space-around;">
+      <div style="display: flex; align-items: center;">
           ${note.img}
           ${note.name}
       </div>
